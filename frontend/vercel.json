@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api-proxy",
+      "destination": "https://your-backend-api-url.railway.app/api-proxy"
+    },
+    {
+      "source": "/ws-proxy",
+      "destination": "https://your-backend-api-url.railway.app/ws-proxy"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
